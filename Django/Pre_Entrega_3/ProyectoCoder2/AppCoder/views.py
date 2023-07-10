@@ -12,13 +12,16 @@ def cliente(self):
     return HttpResponse(documentoDeTexto)
 
 def inicio(request):
-    return HttpResponse('Vista Inicio')
+    return render(request, "AppCoder/inicio.html")
+
+def cliente(request):
+    return render(request, "AppCoder/cliente.html")
 
 def canalDe_Negocio(request):
-    return HttpResponse('Vista CanalDe_Negocio')
+    return render(request, "AppCoder/canalDe_Negocio.html")
 
 def persona_aCargo(request):
-    return HttpResponse('Vista Persona_aCargo')
+    return render(request, "AppCoder/persona_aCargo.html")
 
 def cliente_conDeuda(request):
-    return HttpResponse('vista Cliente_conDeuda')
+    return render(request, "AppCoder/cliente_conDeuda.html")
